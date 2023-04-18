@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MacP\'s Therapy Timer</string>
+    <string name="count_down_label">Count down (secs):</string>
+    <string name="hold_time_label">Hold time (secs):</string>
+    <string name="count_down">Seconds</string>
+    <string name="sound_notification">Sound Notification</string>
+    <string name="total_repetitions_label">Total repetitions:</string>
+    <string name="startup_default_value">10</string>
+    <string name="repetitions">Times</string>
+    <string name="repetitios_label">Repetitions:</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+</resources>

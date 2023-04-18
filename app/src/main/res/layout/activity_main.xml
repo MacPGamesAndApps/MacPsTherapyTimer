@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outerVerticalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/innerVerticalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee_shade"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textViewCountDownLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/count_down_label"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewCountDown"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="3dp"
+                android:background="#A972CE"
+                android:fontFamily="@font/days_one"
+                android:paddingTop="5dp"
+                android:text="@string/count_down"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewRepetitionsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/repetitios_label"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewRepetitions"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#A972CE"
+                android:fontFamily="@font/days_one"
+                android:paddingTop="3dp"
+                android:text="@string/repetitions"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textViewHoldTimeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/hold_time_label"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editTextHoldTime"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="3dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:ems="10"
+                android:fontFamily="@font/days_one"
+                android:inputType="number"
+                android:nextFocusDown="@id/editTextTotalRepetitions"
+                android:selectAllOnFocus="true"
+                android:text="@string/startup_default_value"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewTotalRepetitionsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/total_repetitions_label"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editTextTotalRepetitions"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="3dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:ems="10"
+                android:fontFamily="@font/days_one"
+                android:inputType="number"
+                android:nextFocusUp="@id/editTextHoldTime"
+                android:selectAllOnFocus="true"
+                android:text="@string/startup_default_value"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSoundNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/sound_notification"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:fontFamily="@font/days_one"
+                android:onClick="buttonStart_onClick"
+                android:text="@string/start"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/buttonPause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp"
+                android:fontFamily="@font/days_one"
+                android:onClick="buttonPause_onClick"
+                android:text="@string/pause"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
